@@ -15,9 +15,14 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     screenshot: "only-on-failure", // ถ้า test fail จะเก็บ screenshot
     video: "on", // ถ้า test fail จะเก็บ video
-    trace: "on-first-retry", // เก็บ trace สำหรับ debug
+    trace: "on", // เก็บ trace สำหรับ debug
+      launchOptions: {
+        slowMo: 1000,
+     },
   },
 
   // Directory สำหรับเก็บ artifacts
   outputDir: "./test-results", // screenshot, video, trace จะเก็บที่นี่
+
+  
 });
