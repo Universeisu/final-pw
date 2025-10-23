@@ -11,6 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
-    "@playwright/test": "^1.56.0"
+    "@playwright/test": "^1.56.1"
   }
 }
